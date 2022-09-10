@@ -87,7 +87,7 @@ $(function () {
       
       const info = document.getElementById("to").value; 
       console.log(info) 
-      fetch("http://api.openweathermap.org/geo/1.0/direct?q="+info+"&appid=1810fe48ce87d7961f858cf07a4cb708").then(
+      fetch("https://api.openweathermap.org/geo/1.0/direct?q="+info+"&appid=1810fe48ce87d7961f858cf07a4cb708").then(
       response => response.json()).then(data=> {
         console.log(data)
         let lati = data[0].lat;
