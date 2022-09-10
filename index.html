@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fare Calulator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="social">
+      <a href="https://github.com/Kar4345/" target="_blank"
+        ><div id="git"><img alt="Github" src="./resources/giticon.webp" /></div
+      ></a>
+      <a
+        href="https://www.linkedin.com/in/kartik-ghudhavad-14a53997/"
+        target="_blank"
+        ><div id="linked">
+          <img alt="linkedIn" src="./resources/linkedin.png" /></div
+      ></a>
+      <a href="https://www.instagram.com/ghudawadkartik/" target="_blank"
+        ><div id="insta">
+          <img alt="instagram" src="./resources/Instagram-Icon.png.webp" /></div
+      ></a>
+    </header>
+    <div class="main">
+    <div class="container">
+      <h1 id="headline">Distance Fare Calculator</h1>
+      <form id="form">
+        <div class="inputs" id="origin">
+          <label for="from">Enter Origin:</label>
+          <input
+            type="text"
+            id="from"
+            placeholder="Enter the origin location"
+            required
+          />
+        </div>
+        <div class="inputs" id="destination">
+          <label for="to">Enter Destination:</label>
+          <input
+            type="text"
+            id="to"
+            placeholder="Enter the destination location"
+            required
+          />
+        </div>
+        <div>
+          <h2>Total distance in KMs:</h2>
+          <p id="result_dist"></p>
+        </div>
+        <div>
+          <h2>Total Fare in ₹(INR):</h2>
+          <p id="fare"></p>
+        </div>
+        <div>
+          <button id="calculate">Calculate Fare</button>
+        </div>
+        <div>
+          <p id="temp"></p>
+        </div>
+      </form>
+    </div>
+  </div>
+    <script
+      type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?libraries=places&language=en&key=AIzaSyD51OcSUK4f64fv3yoiVhaMECtf1L6gItU"
+      defer
+    ></script>
+  </body>
+  <script src="index.js">
+    
+  </script>
+</html>
